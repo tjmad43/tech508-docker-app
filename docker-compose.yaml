@@ -1,0 +1,19 @@
+version: "2"
+services:
+  mongo:
+    image: mongo:jammy
+    container_name: tech508-mongodb
+    ports:
+      - "27017:27017"
+
+  app:
+    image: tjmad43/tech508-docker:latest
+    container_name: tech508-app
+    depends_on:
+      - mongo
+    ports:
+      - "3000:3000"
+    # to start wwith shell to ssh in before running:
+    command: sh 
+    stdin_open: true
+    tty: true
