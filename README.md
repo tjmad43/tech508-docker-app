@@ -1,5 +1,27 @@
 # Docker for Sparta App Deployment
 
+- [Docker for Sparta App Deployment](#docker-for-sparta-app-deployment)
+  - [Research](#research)
+    - [Microservices](#microservices)
+    - [Containers](#containers)
+    - [Docker](#docker)
+  - [Docker containers locally](#docker-containers-locally)
+    - [Run and pull your first image](#run-and-pull-your-first-image)
+    - [Run nginx web server in a Docker container](#run-nginx-web-server-in-a-docker-container)
+    - [Remove a container](#remove-a-container)
+    - [Modify nginx default page in container](#modify-nginx-default-page-in-container)
+    - [Run different container on different port](#run-different-container-on-different-port)
+  - [Docker Hub to host custom images](#docker-hub-to-host-custom-images)
+    - [Push host-custom-static-webpage container image to Docker Hub](#push-host-custom-static-webpage-container-image-to-docker-hub)
+    - [Automate docker image creation using a Dockerfile](#automate-docker-image-creation-using-a-dockerfile)
+  - [Run Sparta test app in a container](#run-sparta-test-app-in-a-container)
+  - [Docker Compose Research](#docker-compose-research)
+    - [Why use it?](#why-use-it)
+    - [How to use it](#how-to-use-it)
+  - [Use Docker Compose to run app and database containers](#use-docker-compose-to-run-app-and-database-containers)
+  - [Run on EC2 instance](#run-on-ec2-instance)
+
+
 ## Research
 ### Microservices
 - a software architecture approach where a single application is built as a collection of small, independent, and loosely couples services, each responsible for a specific business capability
